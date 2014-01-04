@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="utf-8" />
-        <title>steven's blog</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven's Blog</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="//atime-me.qiniudn.com/niu-x2/css/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/niu2.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
+    <script type="text/javascript" src="//atime-me.qiniudn.com/niu-x2/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/theme/js/niu2.js"></script>    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            initGoogleCSEAnimation();
+        });
+    </script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="/theme/js/html5shiv.js"></script>
+        <script src="/theme/js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="//atime-me.qiniudn.com/niu-x2/css/font-awesome/css/font-awesome-ie7.min.css" type="text/css" />
+    <![endif]--></head>
+  <body>
+    <div id="body-header"><div class="navbar navbar-inverse navbar-fixed-top">
+<div class="col-md-12">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="">
+            <i class="icon-home"></i>Steven's Blog
+        </a>
+    </div>
+	<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+		<ul class="nav navbar-nav"><li><a href="/archives.html">
+                <i class="icon-archive"></i>Archive</a>
+		</li>
+		<li><a href="/tag/index.html">
+                <i class="icon-tag"></i>Tag</a>
+		</li><!-- category dropdown list -->
+		<li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-folder-open"></i>Category<b class="caret"></b>
+           </a>
+           <ul class="dropdown-menu"><li><a href="/misc/index.html"><i class="icon-folder-close"></i>misc                      (1)</a></li></ul>
+        </li>
+        <!--  self defined dropdown list --><!--  table of contents of page or article --></ul>
+        
+        <!-- right nav bar -->
+		<ul class="nav navbar-nav navbar-right">
+		<!-- google custom search --></ul>
+	</nav>
+</div>
+</div></div>
+    
+    <div id="body-content" class="col-md-8 col-md-offset-2"><div class="niu2-page"><h1 class="niu2-index-title">
+Steven's Blog
+</h1><div class="niu2-index-article">
+	   <div class="niu2-index-article-title">
+           <span><a href="/misc/hello.html">Hello World!</a>
+           </span>
+       </div><div class="niu2-meta-index">
+    <span class="niu2-meta-date-index">
+        <i class="icon-calendar"></i>2013-01-04
+    </span>
+    <span class="niu2-meta-category-index"><i class="icon-open-folder"></i>misc</span></div><div class="niu2-article-summary">
+           
+       </div>
+       </div></div></div>
 
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-</head>
-
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">steven's blog </a></h1>
-                <nav><ul>
-                    <li><a href="/category/misc.html">misc</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/hello-world.html">Hello World!</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2013-01-04T00:00:00">
-                五 04 一月 2013
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="/author/steven.html">steven</a>
-        </address>
-<p>In <a href="/category/misc.html">misc</a>. </p>
-
-</footer><!-- /.post-info --><p>welcome</p>                </article>
-<p class="paginator">
-    Page 1 / 1
+    <div id="body-footer" class="col-md-8 col-md-offset-2"><div class="niu2-footer">
+    <hr/>
+	<p>
+		Powered by <a href="https://github.com/getpelican/pelican">Pelican</a>, 
+		theme built with <a href="http://getbootstrap.com">Bootstrap3</a>
+		by <a href="http://atime.me">Ma Wenbao</a>, icons by 
+		<a href="http://fortawesome.github.io/Font-Awesome">Font Awesome</a>.
+	</p>
+	<p>
+		Copyright
+2013		<a href="">Steven</a>
 </p>
-            </aside><!-- /#featured -->
-            </ol><!-- /#posts-list -->
-            </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
-</body>
+    <p class="niu2-icons"></p>
+</div></div><!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="//atime-me.qiniudn.com/niu-x2/js/bootstrap.min.js"></script></body>
 </html>
