@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="//atime-me.qiniudn.com/niu-x2/css/font-awesome/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="/theme/css/niu2.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
     <link rel="stylesheet" href="/theme/css/custom.css" type="text/css" />
     <script type="text/javascript" src="//atime-me.qiniudn.com/niu-x2/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="/theme/js/niu2.js"></script>
-<link rel="stylesheet" href="/theme/css/pygments/github.css" type="text/css" />    
+<!--
+<link rel="stylesheet" href="/theme/css/pygments/github.css" type="text/css" />
+-->    
     <script type="text/javascript">
         $(document).ready(function(){
             initGoogleCSEAnimation();
@@ -27,52 +30,119 @@ initTocScrollAnimation();        });
     <![endif]--></head>
   <body>
     <div id="body-header"><div class="navbar navbar-inverse navbar-fixed-top">
-<div class="col-md-12">
+  <div class="col-md-12">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="">
-            <i class="icon-home"></i>Steven's Blog
-        </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index.html"> <i class="icon-home"></i>
+        Steven's Blog
+      </a>
     </div>
-	<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-		<ul class="nav navbar-nav"><li><a href="/archives.html">
-                <i class="icon-archive"></i>Archive</a>
-		</li>
-		<li><a href="/tag/index.html">
-                <i class="icon-tag"></i>Tag</a>
-		</li><!-- category dropdown list -->
-		<li class="dropdown">
-           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="icon-folder-open"></i>Category<b class="caret"></b>
-           </a>
-           <ul class="dropdown-menu"><li><a href="/misc/index.html"><i class="icon-folder-close"></i>misc                      (1)</a></li></ul>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav"><li>
+          <a href="/archives.html">
+            <i class="icon-archive"></i>
+            Archive
+          </a>
         </li>
-        <!--  self defined dropdown list --><!--  table of contents of page or article --><li class="dropdown dropdown-toc">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="icon-list-ul"></i>TOC<b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#content-heading">Hello World!</a><ul></ul></li></ul>
+        <li>
+          <a href="/tag/index.html">
+            <i class="icon-tag"></i>
+            Tag
+          </a>
+        </li><!-- category dropdown list -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-folder-open"></i>
+            Category <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu"><li>
+              <a href="/misc/index.html"><i class="icon-folder-close"></i>
+                misc                      (1)
+              </a>
             </li></ul>
-        
-        <!-- right nav bar -->
-		<ul class="nav navbar-nav navbar-right">
-		<!-- google custom search --></ul>
-	</nav>
-</div>
+        </li>
+        <!--  self defined dropdown list --></ul>
+
+      <!-- right nav bar -->
+      <ul class="nav navbar-nav navbar-right">
+        <!-- google custom search --></ul>
+    </nav>
+  </div>
 </div></div>
     
-    <div id="body-content" class="col-md-8 col-md-offset-2"><div class="niu2-article"><div class="niu2-meta">
-    <span class="niu2-meta-category pull-left"><i class="icon-open-folder"></i>misc</span><span class="niu2-meta-date pull-right">
-        <i class="icon-calendar"></i>2013-01-04 00:00:00
-    </span>
-</div>
-<div class="clearfix visible-xs niu2-clearfix"></div><h1 id="content-heading">Hello World!</h1><p>welcome</p>
-    </div><div id="content-comments"></div></div>
+    <div id="body-content"><div id="body-content">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1 id="content-heading">Hello World!</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div id="niu2-left-container" class="col-md-6 col-md-offset-2">
+            <div id="niu2-main-content"><h1>no1</h1>
+<p>welcome</p>
+<h2>no1no1</h2>
+<p>k
+k
+k
+k</p>
+<p>k
+k
+k</p>
+<p>k
+k</p>
+<h1>no2</h1>
+<p>k
+k
+k</p>
+<p>k</p>
+<p>k
+k</p>
+<p>k
+k</p>
+<p>k
+k</p>
+<p>k
+k
+k</p>
+<h2>no2no1</h2>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;hello&#39;</span><span class="p">)</span>
+</pre></div></div>
+        </div>
+        <div id="niu2-right-container" class="col-md-3">
+            <div id="niu2-sidebar-meta" class="niu2-sidebar">
+                <div class="niu2-sidebar-label"> <i class="icon-calendar"></i>
+                    发布时间:
+                </div>
+                <div class="niu2-sidebar-value">2013-01-04 00:00:00</div>
+                <div class="niu2-sidebar-label"> <i class="icon-book"></i>
+                    分类:
+                </div>
+                <div class="niu2-sidebar-value">
+                    <a href="http://blog.atime.me/tag/python.html">java</a>
+                </div>
+                <div class="niu2-sidebar-label">
+                    <i class="icon-tag"></i>
+                    标签:
+                </div>
+                <div class="niu2-sidebar-inter-value niu2-sidebar-tag">
+                    <a href="http://blog.atime.me/tag/python.html">misc</a>
+                </div>
+            </div>
+
+            <div id="niu2-sidebar-toc" class="niu2-sidebar">
+                <div class="niu2-sidebar-label">
+                    <i class="icon-list-ul"></i>
+                    目录
+                </div>
+                <!--  table of contents of page or article --><ol id="niu2-sidebar-toc-list"><li><a href='#eb24623bb90ad124615f5202702a81ca'>no1</a><ol><li><a href='#d4d328e27d75b03df1d9050b0f1a8ab6'>no1no1</a></li></ol></li><li><a href='#71623ef0455d58e9a6380d5e5c08f455'>no2</a><ol><li><a href='#8a3a7b348610e4306ff6d4fb45d068c5'>no2no1</a></li></ol></li></ol></div>
+        </div>
+    </div>
+</div><div id="content-comments"></div></div>
 
     <div id="body-footer" class="col-md-8 col-md-offset-2"><div class="niu2-footer">
     <hr/>

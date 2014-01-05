@@ -8,7 +8,12 @@ i {
     margin-right: 4px;
 }
 
+h2:first-child {
+    margin-top: 0;
+}
+
 h1 {
+    padding-top: 45px;
     margin-bottom: 20px;
 }
 
@@ -21,15 +26,19 @@ blockquote p {
     line-height: 1.3 !important;
 }
 
+#content-comments {
+    margin-top: 25px;
+}
+
 /* fix navbar blik issue on chrome windows */
 .navbar {
     -webkit-backface-visibility: hidden;
 }
 
-#body-content ul ul, 
-#body-content ol ul,
-#body-content ul ol,
-#body-content ol ol {
+#niu2-main-content ul ul, 
+#niu2-main-content ol ul,
+#niu2-main-content ul ol,
+#niu2-main-content ol ol {
     margin-bottom: 5px;
 }
 
@@ -55,7 +64,126 @@ img {
     */
 }
 
-.niu2-article img {
+#niu2-left-container {
+    border-right: 1px solid #ccc;
+}
+
+a.niu2-active-toc, a.niu2-active-toc:hover {
+    color: white;
+    background-color: #428bca;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*
+a.niu2-active-toc:before {
+    font-family: FontAwesome;
+    content: "\f105";
+    margin-left: -10px;
+    margin-right: 5px; 
+    color: black;
+    display: inline-block;
+}
+*/
+
+.niu2-sidebar-tag {
+    margin-top: 3px;
+}
+
+.niu2-sidebar-label:first-child {
+    margin-top: 0 !important;
+}
+
+.niu2-sidebar-label {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.niu2-sidebar-inter-value {
+    margin-left: 20px;
+}
+
+.niu2-sidebar-value {
+    margin-left: 20px;
+}
+
+.niu2-sidebar-value ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+#niu2-sidebar-toc {
+    margin-top: 10px !important;
+}
+
+#niu2-sidebar-toc-list {
+    padding-left: 17px;
+    margin-left: 13px;
+}
+
+#niu2-sidebar-toc-list a {
+    padding: 0 3px;
+    margin-left: 3px;
+}
+
+#niu2-sidebar-toc ol li { display: block; }
+/* hide original list counter */
+#niu2-sidebar-toc ol {
+    list-style: none;
+}
+#niu2-sidebar-toc ol > li:first-child { counter-reset: item; } /* reset counter */
+#niu2-sidebar-toc ol > li { counter-increment: item; } /* increment counter */
+/* print counter */
+#niu2-sidebar-toc ol li:before {
+    content: counters(item, ".") ".";
+    position: absolute;
+    left: -0.1em;
+    width: 2.2em;
+    text-align: right;
+    display: block;
+}
+.niu2-sidebar-toc-fixed li:before { left: -1.1em !important; }
+#niu2-sidebar-toc li li:before { left: -2.1em; }
+.niu2-sidebar-toc-fixed li li:before { left: -2.2em !important; }
+#niu2-sidebar-toc li li li:before { left: -2.6em; }
+.niu2-sidebar-toc-fixed li li li:before { left: -2.7em !important; }
+#niu2-sidebar-toc li li li li:before { left: -3.4em; }
+.niu2-sidebar-toc-fixed li li li li:before { left: -3.5em !important; }
+#niu2-sidebar-toc li li li li li:before { left: -4em; }
+.niu2-sidebar-toc-fixed li li li li li:before { left: -4.1em !important; }
+
+#niu2-sidebar-toc-list li ol {
+    display: none;
+}
+
+#niu2-sidebar-toc-list ol li {
+    display: none;
+    position: relative;
+    left: 1em;
+    list-style-position: outside;
+}
+
+#niu2-sidebar-toc-list li {
+    /*list-style: none;*/
+}
+
+#niu2-sidebar-toc-list li {
+    margin-left: -20px;
+    margin-top: 4px;
+}
+
+#niu2-sidebar-toc-list>li {
+    margin-left: -15px;
+}
+
+.niu2-sidebar-toc-fixed {
+    width: inherit;
+    position: fixed;
+    top: 50px !important;
+}
+
+/*
+img {
     display: block;
     padding: 4px;
     line-height: 20px;
@@ -71,11 +199,7 @@ img {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-
-.niu2-lastmod-box {
-    margin-top: -10px;
-    margin-bottom: 20px;
-}
+*/
 
 .niu2-top-icon-hidden {
     display: none;
@@ -97,7 +221,7 @@ img {
 }
 
 #disqus_thread {
-	margin-top: 30px;
+    margin-top: 30px;
 }
 
 #niu2-cse-wrapper {
@@ -111,7 +235,7 @@ img {
 }
 
 #niu2-cse-search-input {
-	width: 150px;
+    width: 150px;
     height: 20px;
     padding: 1px 3px;
 }
@@ -132,7 +256,7 @@ img {
 
 /*
 .niu2-index-article a:hover {
-	text-decoration: none;
+    text-decoration: none;
     color: white;
     background-color: #428bca;
     display: inline-block;
@@ -178,12 +302,11 @@ img {
 }
 
 .niu2-index-article {
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .niu2-index-article-title {
-	font-size: 25px;
+    font-size: 25px;
 }
 
 .niu2-footer {
@@ -191,12 +314,12 @@ img {
 }
 
 .niu2-footer hr {
-	margin: 8px 0;
+    margin: 8px 0;
 }
 
 .niu2-footer p {
-	padding: 0;
-	margin: 5px 0;
+    padding: 0;
+    margin: 5px 0;
     line-height: 1.42 !important;
 }
 
@@ -205,11 +328,11 @@ img {
 }
 
 .niu2-button {
-	margin-left: 5px;
+    margin-left: 5px;
 }
 
 .niu2-icons a {
-    text-decoration: none;	
+    text-decoration: none;  
 }
 
 .niu2-category-list {
@@ -259,15 +382,15 @@ a.niu2-toggle-ctrl:hover {
 }
 
 #niu2-tagcloud {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 #niu2-tagcloud-filter-input {
-	width: 40%;
+    width: 40%;
 }
 
 #niu2-tagcloud ul {
-    padding: 0;	
+    padding: 0; 
 }
 
 #niu2-tagcloud a {
@@ -275,34 +398,34 @@ a.niu2-toggle-ctrl:hover {
 }
 
 #niu2-tagcloud a:hover {
-	text-decoration: none;
-	color: white;
-	background-color: #428bca;
+    text-decoration: none;
+    color: white;
+    background-color: #428bca;
 }
 
 #niu2-tagcloud li {
-	display: inline;
+    display: inline;
 }
 
 #niu2-tagcloud li, .dropdown-toc li {
-	list-style: none;
+    list-style: none;
 }
 
 .dropdown-toc a {
-	padding: 3px 0 5px 5px;
-	color: #333;
-	display: list-item;
+    padding: 3px 0 5px 5px;
+    color: #333;
+    display: list-item;
 }
 
 .dropdown-toc a:hover {
-	color: white;
-	background-color: #428bca;
-	text-decoration: none;
+    color: white;
+    background-color: #428bca;
+    text-decoration: none;
 }
 
 .dropdown-toc .dropdown-menu {
-	max-height: 500px;
-	overflow: auto;
+    max-height: 500px;
+    overflow: auto;
 }
 
 .dropdown-toc > ul {
@@ -317,25 +440,14 @@ a.niu2-toggle-ctrl:hover {
     padding-left: 10px;
 }
 
-.niu2-page, .niu2-content {
-	padding-top: 30px;
-}
-
-.niu2-page h1, .niu2-article h1 {
-}
-
-.niu2-article {
-	padding-top: 45px;
-    margin-bottom: 25px;
-}
-
-h1.niu2-heading {
+.niu2-content {
+    padding-top: 30px;
 }
 
 /* fix headings covered by fixed header problem */
 h1:before, h2:before, h3:before,
 h4:before, h5:before, h6:before {
-	display: block;
+    display: block;
     content: "";
     height: 45px;
     margin: -45px 0 0;
@@ -348,7 +460,7 @@ h4:before, h5:before, h6:before {
 }
 
 .niu2-index-date {
-	display: none;
+    display: none;
 }
 
 #niu2-cse-wrapper {
@@ -394,4 +506,3 @@ h4:before, h5:before, h6:before {
 }
 
 }
-
